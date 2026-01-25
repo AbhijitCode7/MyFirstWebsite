@@ -1,95 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PORTFOLLIO</title>
-    <style>
-        @font-face {
-            font-family: 'Raleway';
-            src: url('Raleway-VariableFont_wght.ttf') format('truetype');
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>About Me Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b1e;
+      color: #ffffff;
+    }
+
+    /* NAVBAR LINKS */
+    .nav-link {
+      color: #fff;
+      margin: 0 10px;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #f5b041;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body style="
-    margin: 0;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: black;
-    background-attachment: fixed;
-  "
->
 
-<header style="font-family: raleway; color: white; padding-top: 20px; font-size: 40px;">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
 
-    <h1>Heyy! This is <span style="color:rgb(253, 252, 252);">Abhijit</span></h1>
-    <h2>Welcome to my website</h2>
-</header>
-    <hr color="grey">
-<main>
-    <p style="font-family: raleway; font-size: 20px;">I'm glad to have you here.</p>
-    <p style="font-family: raleway; font-size: 20px;">Feel free to explore more about me.<br></p>
-    <div style="font-size: 20px; font-weight: bold;">
-    <section>
-    <a href="/education.html" style="
-     color: rgb(168, 167, 167);
-     font-size: 20px;
-     text-decoration: none;
-     font-weight: bold;
-     border: 1px solid grey;
-     border-radius: 8px;
-        padding: 5px 10px;
-        background-image: linear-gradient(to top,rgb(29, 27, 27), grey);
-     background-color: rgb(51, 48, 48);
-   ">
-  EDUCATION📖
-</a>
+  <!-- NAVBAR -->
+  <div style="width:100%; padding:20px 60px; display:flex; justify-content:space-between; align-items:center; background:#111827;">
+    <h2 style="margin:0;">About<span style="color:#f5b041;"> Me.</span></h2>
 
-    </section>
-    <br>
-    <section>
-    <a href="/Experience.html" style="
-     color: rgb(172, 163, 163);
-     font-size: 20px;
-     text-decoration: none;
-     font-weight: bold;
-     border: 1px solid grey;
-     border-radius: 8px;
-     padding: 5px 10px;
-     background-image: linear-gradient(to top,rgb(29, 27, 27), grey);
-   ">EXPERIENCE🤖 </a>
-    </section>
-    <br>
-    <section>
-    <a href="/projects.html" style="
-     color: rgb(168, 167, 167);
-     font-size: 20px;
-     text-decoration: none;
-     font-weight: bold;
-     border: 1px solid grey;
-     border-radius: 8px;
-        padding: 5px 10px;
-     background-color: rgb(51, 48, 48);
-     background-image: linear-gradient(to top,rgb(29, 27, 27), grey);
-   ">PROJECTS📑</a>
-    </section>
-    <br>
+    <div>
+      <a href="#home" class="nav-link">HOME</a>
+      <a href="#about" class="nav-link">ABOUT</a>
+      <a href="#service" class="nav-link">SERVICE</a>
+      <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+      <a href="#experience" class="nav-link">RESUME</a>
+      <a href="#contact" class="nav-link">CONTACT</a>
     </div>
-</main>
-<footer>
-    <hr color="grey">
-    <p style="font-size: 20px;"><b>Thank you for visiting my website!</b></p>
+  </div>
+
+  <!-- HOME -->
+  <div id="home" style="padding:80px 60px; background:linear-gradient(135deg,#14002d,#09001a);">
+    <p style="color:#f5b041;">Hello, Welcome</p>
+    <h1 style="font-size:48px; margin:0;">I’m Abhijit</h1>
+    <p style="max-width:500px; color:#cccccc;">
+      There are many variations of passages of Lorem Ipsum available.
+    </p>
+    <button style="background:#f5b041; border:none; padding:12px 25px; cursor:pointer;">
+      Contact Us
+    </button>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" style="display:flex; padding:80px 60px; gap:60px; align-items:center;">
+    <div style="width:280px; height:280px; border:6px solid #f5b041;"></div>
+    <div>
+      <h2>About <span style="color:#f5b041;">Me</span></h2>
+      <p style="max-width:500px; color:#cccccc;">
+        There are many variations of passages of Lorem Ipsum available.
+      </p>
+      <button style="background:#f5b041; border:none; padding:12px 25px; cursor:pointer;">
+        Contact Us
+      </button>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div id="service" style="background:#111827; padding:80px 60px;">
+    <h2>My <span style="color:#f5b041;">Service</span></h2>
+
+    <div style="display:flex; gap:30px; margin-top:40px;">
+      <div style="flex:1; background:#0b1220; padding:30px; border-radius:10px;">
+        <h3>Digital Marketing</h3>
+        <p style="color:#cccccc;">Lorem Ipsum available.</p>
+      </div>
+
+      <div style="flex:1; background:#0b1220; padding:30px; border-radius:10px;">
+        <h3>Web Development</h3>
+        <p style="color:#cccccc;">Lorem Ipsum available.</p>
+      </div>
+
+      <div style="flex:1; background:#0b1220; padding:30px; border-radius:10px;">
+        <h3>Graphic Design</h3>
+        <p style="color:#cccccc;">Lorem Ipsum available.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div id="portfolio" style="padding:80px 60px;">
+    <h2 style="text-align:center;">My <span style="color:#f5b041;">Portfolio</span></h2>
+    <iframe src="https://www.wikipedia.org" 
+      width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" 
+      style="display:block; margin:40px auto; border:1px solid #ccc; box-shadow:2px 2px 12px rgba(0,0,0,0.1);"
+      allowfullscreen allow="fullscreen"> </iframe>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div id="experience" style="background:#111827; padding:80px 60px;">
+    <h2>My <span style="color:#f5b041;">Experiences</span></h2>
+
+    <div style="display:flex; gap:30px; margin-top:40px;">
+      <div style="flex:1; background:#0b1220; padding:30px; border-radius:10px;">
+        <strong>UX/UI Designer</strong>
+        <p style="color:#cccccc;">June 2002 – 2020</p>
+      </div>
+
+      <div style="flex:1; background:#0b1220; padding:30px; border-radius:10px;">
+        <strong>Product Designer</strong>
+        <p style="color:#cccccc;">June 2002 – 2020</p>
+      </div>
+
+      <div style="flex:1; background:#0b1220; padding:30px; border-radius:10px;">
+        <strong>Graphic Designer</strong>
+        <p style="color:#cccccc;">June 2002 – 2020</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" style="padding:80px 60px;">
+    <h2 style="text-align:center;">Contact <span style="color:#f5b041;">Me</span></h2>
+
+    <div style="display:flex; gap:40px; margin-top:40px;">
+      <div style="flex:1;">
+        <p><strong>Address:</strong> Assam, India</p>
+        <p><strong>Phone:</strong> +91 9613214605</p>
+        <p><strong>Email:</strong> abhijitbora215@gmail.com</p>
+      </div>
+
+      <div style="flex:1;">
+        <input type="text" placeholder="Name" style="width:100%; padding:12px; margin-bottom:10px;">
+        <textarea placeholder="Message" style="width:100%; padding:12px; height:100px;"></textarea>
+        <button style="background:#f5b041; border:none; padding:12px 25px; margin-top:10px;">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#09001a; padding:30px; text-align:center;">
+    <h3>About<span style="color:#fafafa;"> Me.</span></h3>
+    <p style="color:#cccccc;">Thanks for visiting my portfolio! Let's get in touch.</p>
     <a href="http://www.linkedin.com/in/abhijit-bora-13081a346" target ="_main"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB20lEQVRYhWP8//8/w0ACpgG1nYGBgQXGaNh106Jx160lDAwMyjS28269m1pMg5v6CQYGBgZGWBQwlmy+QwfL4Y743+OrwsCAGgX0shzFLhZcKjzURRnSLRUYGBgYGGYef8Cw4+ZrmrgEqwM81EUZtqdawPkBOhIMnrNP0MQRWHMBzOeExGjmAHoCrA6YefwBUWLUAFjTwI6brxk8Z58YuEQIcwSplioIcjKIcLMxvPn6i+HJxx8Mf/4RLuZxOuB/jy8Kn7FkM4b4gbtvGTxnn2Aod1JhyLFWZBDhZoPL/fj9l2HFhWcMlduuM7z4/JN0BxADeNiYGXanWzDYKApjyHGwMjMkmMoyWMgLMlhOOszw4ccfrGZQlAtMZAWwWo4MNMR4GLKtFXHKUy0bvvn6i+HBu28MX35i+jRETxKnPoqigIGBgeHPv38MqasuMiw484SBgYGBQYCDhWF9oimDg7IIXI2OJC9O/RSHwJSjD+CWMzAwMHz48Yehdc9tFDUsTLitodgBK88/xRC78+Yr0fopdgC2LPbh+2/6OeDB+++YDsCR5WjiAErBqANGHYDcLKdrF+l/jy8jA8MgCAFkB9ylo71wu+AOqHdTi6GTI+7uz7SMgHEYR3zvGABAiZoIrctOXgAAAABJRU5ErkJggg==" height="20"></a>
-    <a href = "https://github.com/AbhijitCode7" target="_main"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC5UlEQVR4AaxXA4xdQRSd2u7MfNe24qS2bRtR7b5ujFpR46SI2Ua1bdu2ufckn7Mz7739fya57e7gnPuul/ldTZo0KRkUontAiC0BzveT3JRCfIbgZ+zhDHdwl9laNTkPEPA2yflHkv8+5SPe4G3WxHXr1i1FIHkkXwCajeAtMICVzVefAIgNAZZva0SEaE7+fIyHNgWYwPb+cpXcshLgcPP5CeXBNZKdtP8mC8L39HY3yVnVHdqYQLCoIEEpp+GsQ4cOxaWUk6QQz7EfT79LBH6Q5AD9fJH2P8QJ3tLenEQqUloOUnHBVdD0mmgPBALtMmoB5+Vpr7HjOEWZsv7//18kHA7Xj8ViVdL3SfFauuzIcAVyVmfGYDDYhuW4QqFQTIcNzmSFMxUZMt/YXBUgi/U0FStwM5ROUxEhC9TIVQFySzXCeq3jADfMv8WgwEJmaVFQTjRwbMHhft1hJBKpZ62f1KxZWccBbihwU2d+RDWzuAjzoUaBmww5rVHgHrO8iOyUygNuaPZVY55PthXAR6k84NaYJi5SCosxUJp4fmgUeAAFThpSZIwlfrdUP8GCnG8wROgpW4FIRHt0HOBWm4Wq4XwLwTfBhA9u1qBBgwoIOsOlf+hcbdq0KVFYYjQsfABh/DFgf0JzS5hoc1pqrA1JOQotNs0dj+iOExKiKxWoqibS2rVrV5JSdgpKuYze33YdTqTclHwY4bwuEfyMk70DEbQjkPOa3D2CrzOYe7/PGfFHVIg6aqCsTu9U1EQitOqpjYSs08+l83XwqYCjHckUs29PG1bm0d56TEhuIzbc40UODmCYhocoXXoWv/wHvZwVctG73y4KPAOHe/8WokWGEkLsRTRTykyn/1cOHTq0mIcCf0zkwPY7RESkEBd0QJhiPBT4qzH7JYxm2fxp5qg1HHXdQ4F/acH2kyRP88b/QrpQzm5EZqB9YkT3KLtvcQ/Tjr2hJj6SY+T24z6yXv74iDUXAHnsU9JuBm1tAAAAAElFTkSuQmCC" height = "20" alt="Github"</a>
-</footer>
-    <script>
-        console.log("Hello, User!");
-    </script>
+    <a href = "https://github.com/AbhijitCode7" target="_main"><img src="/github_logo_icon_154464.png" height = "20" alt="Github"></a> 
+  </div>
+
 </body>
 </html>
-
