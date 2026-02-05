@@ -203,8 +203,38 @@
     }
 
     .portfolio-card {
-      max-width: 650px;
+      max-width: 900px;
       margin: 40px auto 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: center;
+    }
+
+    .portfolio-preview {
+      height: 230px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(245, 176, 65, 0.2), rgba(17, 24, 39, 0.8));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .portfolio-content p {
+      color: var(--muted);
+    }
+
+    .portfolio-actions {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
     .contact-grid {
@@ -334,6 +364,10 @@
         gap: 30px;
       }
 
+      .portfolio-card {
+        grid-template-columns: 1fr;
+      }
+
       .contact-grid {
         flex-direction: column;
       }
@@ -356,7 +390,7 @@
       <a href="#about" class="nav-link">ABOUT</a>
       <a href="#service" class="nav-link">SERVICES</a>
       <a href="#portfolio" class="nav-link">PORTFOLIO</a>
-      <a href="#experience" class="nav-link">RESUME</a>
+      <a href="#experience" class="nav-link">EXPERIENCE</a>
       <a href="#contact" class="nav-link">CONTACT</a>
     </div>
   </div>
@@ -422,10 +456,17 @@
     <div class="container">
       <h2 class="section-title" style="text-align:center;">Featured <span>Project</span></h2>
       <div class="card portfolio-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-          My first project, built with HTML, CSS, and JavaScript to showcase my skills and learning journey. More projects are on the way.
-        </p>
+        <div class="portfolio-preview">Project Preview</div>
+        <div class="portfolio-content">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            My first project, built with HTML, CSS, and JavaScript to showcase my skills and learning journey. More projects are on the way.
+          </p>
+          <div class="portfolio-actions">
+            <a class="btn" href="#contact">Work With Me</a>
+            <a class="btn btn-outline" href="https://github.com/AbhijitCode7" target="_main">View Code</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -439,17 +480,17 @@
       <div class="card-grid">
         <div class="card">
           <strong>Full Stack Learning Path</strong>
-          <p>Ongoing - MERN stack training and project practice.</p>
+          <p>Focused on MERN fundamentals with steady, project-based practice.</p>
         </div>
 
         <div class="card">
           <strong>Front End Projects</strong>
-          <p>Ongoing - HTML, CSS, and JavaScript experience.</p>
+          <p>Building responsive interfaces with HTML, CSS, and JavaScript.</p>
         </div>
 
         <div class="card">
           <strong>Programming Foundations</strong>
-          <p>Ongoing - C, C++, and SQL problem solving.</p>
+          <p>Strong basics in C, C++, and SQL for logic and problem solving.</p>
         </div>
       </div>
     </div>
@@ -460,7 +501,7 @@
     <div class="container">
       <h2 class="section-title" style="text-align:center;">Contact <span>Me</span></h2>
       <p class="section-intro" style="text-align:center; margin-left:auto; margin-right:auto;">
-        Let’s connect and build something great together.
+        Let's connect and build something great together.
       </p>
 
       <div class="contact-grid">
